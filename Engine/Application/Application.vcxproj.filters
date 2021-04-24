@@ -22,6 +22,15 @@
     <Filter Include="Source Files\Command">
       <UniqueIdentifier>{890fe7fa-b752-49e9-bd1c-4bbfd7845603}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Object">
+      <UniqueIdentifier>{37bb6043-16d7-4a38-99fd-d3b81fc22185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component">
+      <UniqueIdentifier>{b65d98a6-dd92-45bd-beb0-f8a43ef0f2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\State">
+      <UniqueIdentifier>{9b0fe5f2-3283-42cf-906d-570d2bf25edb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Input\input.cpp">
@@ -41,6 +50,24 @@
     </ClCompile>
     <ClCompile Include="Command\Jump.cpp">
       <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Object.cpp">
+      <Filter>Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Component.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="State\StateManager.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State\State.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State\TestState.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State\TestState2.cpp">
+      <Filter>Source Files\State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +94,24 @@
     </ClInclude>
     <ClInclude Include="Command\Command.hpp">
       <Filter>Source Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Object.hpp">
+      <Filter>Source Files\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Component.hpp">
+      <Filter>Source Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="State\StateManager.hpp">
+      <Filter>Source Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\State.hpp">
+      <Filter>Source Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\TestState.hpp">
+      <Filter>Source Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\TestState2.hpp">
+      <Filter>Source Files\State</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

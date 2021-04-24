@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{EDF3479B-1CE8-46E7-8B67-69ABE3D929C3}</ProjectGuid>
     <RootNamespace>Application</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -164,7 +164,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Command\Jump.cpp" />
+    <ClCompile Include="Component\Component.cpp" />
     <ClCompile Include="Input\input.cpp" />
+    <ClCompile Include="Object\Object.cpp" />
+    <ClCompile Include="State\State.cpp" />
+    <ClCompile Include="State\StateManager.cpp" />
+    <ClCompile Include="State\TestState.cpp" />
+    <ClCompile Include="State\TestState2.cpp" />
     <ClCompile Include="Window\Application.cpp" />
     <ClCompile Include="Window\Engine.cpp" />
     <ClCompile Include="Window\PlatformWindow.cpp" />
@@ -173,7 +179,13 @@
   <ItemGroup>
     <ClInclude Include="Command\Command.hpp" />
     <ClInclude Include="Command\Jump.hpp" />
+    <ClInclude Include="Component\Component.hpp" />
     <ClInclude Include="Input\input.hpp" />
+    <ClInclude Include="Object\Object.hpp" />
+    <ClInclude Include="State\State.hpp" />
+    <ClInclude Include="State\StateManager.hpp" />
+    <ClInclude Include="State\TestState.hpp" />
+    <ClInclude Include="State\TestState2.hpp" />
     <ClInclude Include="Window\Application.hpp" />
     <ClInclude Include="Window\Engine.hpp" />
     <ClInclude Include="Window\PlatformWindow.hpp" />

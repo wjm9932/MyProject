@@ -1,5 +1,5 @@
 #include <chrono>
-#include <Input/input.hpp>
+#include "input.hpp"
 #include <Window/PlatformWindow.hpp>
 #include <iostream>
 
