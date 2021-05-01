@@ -14,8 +14,8 @@ Application* Application::GetApplication()
 void Application::Init()
 {
 
-    StateManger::GetStateManager()->AddState("Level1", dynamic_cast<State*>(new Level1()));
-    StateManger::GetStateManager()->AddState("Level2", dynamic_cast<State*>(new Level2()));
+    StateManger::GetStateManager()->AddState(dynamic_cast<State*>(new Level1()));
+    StateManger::GetStateManager()->AddState(dynamic_cast<State*>(new Level2()));
     input.Init();
     window.CreateWindow();
 }

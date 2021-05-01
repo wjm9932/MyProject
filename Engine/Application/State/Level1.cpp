@@ -3,7 +3,6 @@
 
 void Level1::Init()
 {
-    SetNextStateName("Level2");
     SetIsNext(false);
     std::cout << "Level1 is loaded";
 }
