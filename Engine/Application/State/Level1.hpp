@@ -1,7 +1,7 @@
 #pragma once
 #include <State/State.hpp>
 
-class TestState : public State
+class Level1 : public State
 {
     virtual void Init();
     virtual void Update();

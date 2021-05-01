@@ -2,8 +2,8 @@
 #include <Window/Application.hpp>
 #include <Input/input.hpp>
 #include <State/StateManager.hpp>
-#include <State/TestState.hpp>
-#include <State/TestState2.hpp>
+#include <State/Level1.hpp>
+#include <State/Level2.hpp>
 
 Application* Application::GetApplication()
 {
@@ -14,8 +14,8 @@ Application* Application::GetApplication()
 void Application::Init()
 {
 
-    StateManger::GetStateManager()->AddState("TestState", dynamic_cast<State*>(new TestState()));
-    StateManger::GetStateManager()->AddState("TestState2", dynamic_cast<State*>(new TestState2()));
+    StateManger::GetStateManager()->AddState("Level1", dynamic_cast<State*>(new Level1()));
+    StateManger::GetStateManager()->AddState("Level2", dynamic_cast<State*>(new Level2()));
     input.Init();
     window.CreateWindow();
 }

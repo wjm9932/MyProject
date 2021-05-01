@@ -33,7 +33,6 @@ void StateManger::Update()
 void StateManger::SetNextState()
 {
     currentState->SetIsNext(true);
-
 }
 
 void StateManger::AddState(std::string name, State* state)

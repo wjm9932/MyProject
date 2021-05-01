@@ -63,10 +63,10 @@
     <ClCompile Include="State\State.cpp">
       <Filter>Source Files\State</Filter>
     </ClCompile>
-    <ClCompile Include="State\TestState.cpp">
+    <ClCompile Include="State\Level1.cpp">
       <Filter>Source Files\State</Filter>
     </ClCompile>
-    <ClCompile Include="State\TestState2.cpp">
+    <ClCompile Include="State\Level2.cpp">
       <Filter>Source Files\State</Filter>
     </ClCompile>
   </ItemGroup>
@@ -107,10 +107,10 @@
     <ClInclude Include="State\State.hpp">
       <Filter>Source Files\State</Filter>
     </ClInclude>
-    <ClInclude Include="State\TestState.hpp">
+    <ClInclude Include="State\Level1.hpp">
       <Filter>Source Files\State</Filter>
     </ClInclude>
-    <ClInclude Include="State\TestState2.hpp">
+    <ClInclude Include="State\Level2.hpp">
       <Filter>Source Files\State</Filter>
     </ClInclude>
   </ItemGroup>

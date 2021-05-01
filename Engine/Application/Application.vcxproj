@@ -169,8 +169,8 @@
     <ClCompile Include="Object\Object.cpp" />
     <ClCompile Include="State\State.cpp" />
     <ClCompile Include="State\StateManager.cpp" />
-    <ClCompile Include="State\TestState.cpp" />
-    <ClCompile Include="State\TestState2.cpp" />
+    <ClCompile Include="State\Level1.cpp" />
+    <ClCompile Include="State\Level2.cpp" />
     <ClCompile Include="Window\Application.cpp" />
     <ClCompile Include="Window\Engine.cpp" />
     <ClCompile Include="Window\PlatformWindow.cpp" />
@@ -184,8 +184,8 @@
     <ClInclude Include="Object\Object.hpp" />
     <ClInclude Include="State\State.hpp" />
     <ClInclude Include="State\StateManager.hpp" />
-    <ClInclude Include="State\TestState.hpp" />
-    <ClInclude Include="State\TestState2.hpp" />
+    <ClInclude Include="State\Level1.hpp" />
+    <ClInclude Include="State\Level2.hpp" />
     <ClInclude Include="Window\Application.hpp" />
     <ClInclude Include="Window\Engine.hpp" />
     <ClInclude Include="Window\PlatformWindow.hpp" />
