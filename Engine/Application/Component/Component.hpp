@@ -1,9 +1,9 @@
 #pragma once
 class Object;
-class Componet
+class Component
 {
 public: 
-    explicit Componet(Object*);
+    explicit Component(Object*);
     virtual void Init() = 0;
     virtual void Update() = 0;
     virtual void Clear() = 0;

@@ -165,8 +165,11 @@
   <ItemGroup>
     <ClCompile Include="Command\Jump.cpp" />
     <ClCompile Include="Component\Component.cpp" />
+    <ClCompile Include="Component\Physics.cpp" />
+    <ClCompile Include="Component\Sprite.cpp" />
     <ClCompile Include="Input\input.cpp" />
     <ClCompile Include="Object\Object.cpp" />
+    <ClCompile Include="Object\ObjectManager.cpp" />
     <ClCompile Include="State\State.cpp" />
     <ClCompile Include="State\StateManager.cpp" />
     <ClCompile Include="State\Level1.cpp" />
@@ -180,8 +183,11 @@
     <ClInclude Include="Command\Command.hpp" />
     <ClInclude Include="Command\Jump.hpp" />
     <ClInclude Include="Component\Component.hpp" />
+    <ClInclude Include="Component\Physics.hpp" />
+    <ClInclude Include="Component\Sprite.hpp" />
     <ClInclude Include="Input\input.hpp" />
     <ClInclude Include="Object\Object.hpp" />
+    <ClInclude Include="Object\ObjectManager.hpp" />
     <ClInclude Include="State\State.hpp" />
     <ClInclude Include="State\StateManager.hpp" />
     <ClInclude Include="State\Level1.hpp" />

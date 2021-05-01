@@ -2,6 +2,7 @@
 #include <Window/Application.hpp>
 #include <Input/input.hpp>
 #include <State/StateManager.hpp>
+#include <Object/ObjectManager.hpp>
 #include <State/Level1.hpp>
 #include <State/Level2.hpp>
 
@@ -38,6 +39,8 @@ void Application::Update(float dt)
 
     const auto& stateManger = StateManger::GetStateManager();
     stateManger->Update();
+    const auto& objManager = ObjectManager::GetObjectManager();
+    objManager->Update();
 
     GetApplication()->Input();
 

@@ -69,6 +69,15 @@
     <ClCompile Include="State\Level2.cpp">
       <Filter>Source Files\State</Filter>
     </ClCompile>
+    <ClCompile Include="Object\ObjectManager.cpp">
+      <Filter>Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Physics.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Sprite.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Input\input.hpp">
@@ -112,6 +121,15 @@
     </ClInclude>
     <ClInclude Include="State\Level2.hpp">
       <Filter>Source Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ObjectManager.hpp">
+      <Filter>Source Files\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Physics.hpp">
+      <Filter>Source Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Sprite.hpp">
+      <Filter>Source Files\Component</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
