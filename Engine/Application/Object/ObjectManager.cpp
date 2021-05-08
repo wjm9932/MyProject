@@ -14,7 +14,7 @@ void ObjectManager::AddObject(Object* obj)
     objectContainer.push_back(obj);
 }
 
-void ObjectManager::Update()
+void ObjectManager::Update(float dt)
 {
     toBeDeletedObj.clear();
     for (const auto& obj : objectContainer)

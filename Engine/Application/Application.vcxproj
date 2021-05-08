@@ -168,8 +168,10 @@
     <ClCompile Include="Component\Physics.cpp" />
     <ClCompile Include="Component\Sprite.cpp" />
     <ClCompile Include="Input\input.cpp" />
+    <ClCompile Include="Input\InputHandler.cpp" />
     <ClCompile Include="Object\Object.cpp" />
     <ClCompile Include="Object\ObjectManager.cpp" />
+    <ClCompile Include="Object\Player.cpp" />
     <ClCompile Include="State\State.cpp" />
     <ClCompile Include="State\StateManager.cpp" />
     <ClCompile Include="State\Level1.cpp" />
@@ -186,8 +188,10 @@
     <ClInclude Include="Component\Physics.hpp" />
     <ClInclude Include="Component\Sprite.hpp" />
     <ClInclude Include="Input\input.hpp" />
+    <ClInclude Include="Input\InputHandler.hpp" />
     <ClInclude Include="Object\Object.hpp" />
     <ClInclude Include="Object\ObjectManager.hpp" />
+    <ClInclude Include="Object\Player.hpp" />
     <ClInclude Include="State\State.hpp" />
     <ClInclude Include="State\StateManager.hpp" />
     <ClInclude Include="State\Level1.hpp" />

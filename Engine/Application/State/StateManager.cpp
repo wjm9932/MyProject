@@ -12,7 +12,7 @@ void StateManger::Init()
 {
 }
 
-void StateManger::Update()
+void StateManger::Update(float dt)
 {
     if (input.IsKeyTriggered(GLFW_KEY_N))
     {

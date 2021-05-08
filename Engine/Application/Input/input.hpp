@@ -36,7 +36,6 @@ public:
 
     bool GetShouldToggleWindow() const noexcept;
     void SetShouldToggleWindow(bool should) noexcept;
-    void HandleInput();
 
 private:
     std::bitset<GLFW_KEY_LAST> keyTriggered;
@@ -55,9 +54,6 @@ private:
 
     bool isRunning = true;
     bool shouldToggleWindow = false;
-
-    Command* Button_Space = new Jump();
-    Command* Button_S = nullptr;
 };
 
 extern Input input;
