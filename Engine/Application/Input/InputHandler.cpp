@@ -7,10 +7,13 @@ void InputHandler::Init()
 
 void InputHandler::Update(float dt)
 {
-    if (input.IsKeyTriggered(GLFW_KEY_W) == true)
+    Command* comm = GetCommand();
+
+    if (comm != nullptr)
     {
-        button_[GetButton(GLFW_KEY_W)]->Execute();
+        comm->Execute();
     }
+
 }
 
 InputHandler* InputHandler::GetInputHandler()
@@ -21,11 +24,23 @@ InputHandler* InputHandler::GetInputHandler()
 
 void InputHandler::BindCommandToKey(Command* command, int key)
 {
-    const int button = GetButton(key);
+    const int button = GetKey(key);
     button_[button] = command;
 }
 
-const int InputHandler::GetButton(int key)
+Command* InputHandler::GetCommand()
+{
+    if (input.IsKeyTriggered(GLFW_KEY_W) == true)
+    {
+        return  button_[GetKey(GLFW_KEY_W)];
+    }
+    else
+    {
+        return nullptr;
+    }
+}
+
+const int InputHandler::GetKey(int key)
 {
     return key - OFFSET;
 }

@@ -12,9 +12,11 @@ public:
     void Update(float dt);
 
     void BindCommandToKey(Command* command, int key);
-private:
-    const int GetButton(int key); // helper func
 
+    Command* GetCommand();
+
+private:
+    const int GetKey(int key); // helper func
 
     Command** button_ = new Command*[52];
 };

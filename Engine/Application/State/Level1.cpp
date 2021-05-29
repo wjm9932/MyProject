@@ -13,10 +13,10 @@ void Level1::Init()
     SetIsNext(false);
     std::cout << "Level1 is loaded\n";
 
-    
     player = new Player("player");
     player->AddComponent(new Physics(player));
     player->AddComponent(new Sprite(player));
+    //player->AddCommand(new Jump(player), "Jump");
 
     testObject_1 = new Object("testObject_1");
     testObject_1->AddComponent(new Physics(testObject_1));
@@ -38,9 +38,10 @@ void Level1::Init()
     objManager->AddObject(testObject_2);
     objManager->AddObject(testObject_3);
 
-    const auto& inputHandler = InputHandler::GetInputHandler();
-    inputHandler->BindCommandToKey(player->GetJumpCommand(), GLFW_KEY_W);
+    //const auto& inputHandler = InputHandler::GetInputHandler();
 
+    //inputHandler->BindCommandToKey(new Jump(player), GLFW_KEY_W);
+    
 }
 
 void Level1::Update()

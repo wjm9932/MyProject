@@ -5,7 +5,17 @@ Player::Player(std::string name) : Object(name)
 {
 }
 
-Jump* Player::GetJumpCommand()
+//void Player::AddCommand(Command* cmd, std::string cmdName)
+//{
+//    commands.insert(std::make_pair(cmd, cmdName));
+//}
+
+//Jump* Player::GetJumpCommand()
+//{
+//    return jump;
+//}
+
+void Player::Jumping()
 {
-    return jump;
+    std::cout << "jumping\n";
 }

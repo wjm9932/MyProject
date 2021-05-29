@@ -15,12 +15,10 @@ Application* Application::GetApplication()
 
 void Application::Init()
 {
-
     StateManger::GetStateManager()->AddState(dynamic_cast<State*>(new Level1()));
     StateManger::GetStateManager()->AddState(dynamic_cast<State*>(new Level2()));
     input.Init();
     window.CreateWindow();
-
 }
 
 void Application::Update(float dt)
