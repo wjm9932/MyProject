@@ -8,7 +8,7 @@ class ObjectManager
 public:
     static ObjectManager* GetObjectManager();
     void AddObject(Object* obj);
-    void Update();
+    void Update(float dt);
 
 private:
     std::vector<Object* > objectContainer;

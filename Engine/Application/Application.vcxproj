@@ -163,6 +163,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Achievement\Achievement.cpp" />
     <ClCompile Include="Command\Jump.cpp" />
     <ClCompile Include="Component\Component.cpp" />
     <ClCompile Include="Component\Physics.cpp" />
@@ -170,16 +171,19 @@
     <ClCompile Include="Input\input.cpp" />
     <ClCompile Include="Object\Object.cpp" />
     <ClCompile Include="Object\ObjectManager.cpp" />
+    <ClCompile Include="Observer\Observer.cpp" />
     <ClCompile Include="State\State.cpp" />
     <ClCompile Include="State\StateManager.cpp" />
     <ClCompile Include="State\Level1.cpp" />
     <ClCompile Include="State\Level2.cpp" />
+    <ClCompile Include="Subject\Subject.cpp" />
     <ClCompile Include="Window\Application.cpp" />
     <ClCompile Include="Window\Engine.cpp" />
     <ClCompile Include="Window\PlatformWindow.cpp" />
     <ClCompile Include="Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Achievement\Achievement.hpp" />
     <ClInclude Include="Command\Command.hpp" />
     <ClInclude Include="Command\Jump.hpp" />
     <ClInclude Include="Component\Component.hpp" />
@@ -188,10 +192,12 @@
     <ClInclude Include="Input\input.hpp" />
     <ClInclude Include="Object\Object.hpp" />
     <ClInclude Include="Object\ObjectManager.hpp" />
+    <ClInclude Include="Observer\Observer.hpp" />
     <ClInclude Include="State\State.hpp" />
     <ClInclude Include="State\StateManager.hpp" />
     <ClInclude Include="State\Level1.hpp" />
     <ClInclude Include="State\Level2.hpp" />
+    <ClInclude Include="Subject\Subject.hpp" />
     <ClInclude Include="Window\Application.hpp" />
     <ClInclude Include="Window\Engine.hpp" />
     <ClInclude Include="Window\PlatformWindow.hpp" />

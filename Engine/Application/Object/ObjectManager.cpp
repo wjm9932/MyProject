@@ -14,7 +14,7 @@ void ObjectManager::AddObject(Object* obj)
     objectContainer.push_back(obj);
 }
 
-void ObjectManager::Update()
+void ObjectManager::Update(float dt)
 {
     toBeDeletedObj.clear();
     for (const auto& obj : objectContainer)
@@ -26,7 +26,7 @@ void ObjectManager::Update()
         }
         for (const auto& comp : obj->GetComponentContainer())
         {
-            comp->Update();
+            comp->Update(dt);
         }
     }
     for (const auto& obj : toBeDeletedObj)

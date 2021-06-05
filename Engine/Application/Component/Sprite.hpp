@@ -7,7 +7,7 @@ class Sprite : public Component
 public:
     Sprite(Object* obj);
     void Init();
-    void Update();
+    void Update(float dt);
     void Clear();
 private:
 };

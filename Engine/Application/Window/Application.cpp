@@ -40,7 +40,7 @@ void Application::Update(float dt)
     const auto& stateManger = StateManger::GetStateManager();
     stateManger->Update();
     const auto& objManager = ObjectManager::GetObjectManager();
-    objManager->Update();
+    objManager->Update(dt);
 
     GetApplication()->Input();
 

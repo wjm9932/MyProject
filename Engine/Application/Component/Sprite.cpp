@@ -7,10 +7,10 @@ Sprite::Sprite(Object* obj) : Component(obj)
 
 void Sprite::Init()
 {
-    std::cout << "Component Sprite is Init\n";
+    std::cout << "Component Sprite is Initialized\n";
 }
 
-void Sprite::Update()
+void Sprite::Update(float dt)
 {
 }
 

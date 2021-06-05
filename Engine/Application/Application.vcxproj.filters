@@ -31,6 +31,15 @@
     <Filter Include="Source Files\State">
       <UniqueIdentifier>{9b0fe5f2-3283-42cf-906d-570d2bf25edb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Observer">
+      <UniqueIdentifier>{742b4942-98fe-4b83-b657-8f5ad8a27da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Subject">
+      <UniqueIdentifier>{e961969a-362d-40c7-ace4-6b73ddbd36b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Achievement">
+      <UniqueIdentifier>{f3a24cd8-b0fb-4c51-8e64-78a6f86d232a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Input\input.cpp">
@@ -77,6 +86,15 @@
     </ClCompile>
     <ClCompile Include="Component\Sprite.cpp">
       <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Observer.cpp">
+      <Filter>Source Files\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Subject\Subject.cpp">
+      <Filter>Source Files\Subject</Filter>
+    </ClCompile>
+    <ClCompile Include="Achievement\Achievement.cpp">
+      <Filter>Source Files\Achievement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +148,15 @@
     </ClInclude>
     <ClInclude Include="Component\Sprite.hpp">
       <Filter>Source Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Observer.hpp">
+      <Filter>Source Files\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject\Subject.hpp">
+      <Filter>Source Files\Subject</Filter>
+    </ClInclude>
+    <ClInclude Include="Achievement\Achievement.hpp">
+      <Filter>Source Files\Achievement</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
