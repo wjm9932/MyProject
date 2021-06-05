@@ -2,6 +2,7 @@
 #include <Window/Application.hpp>
 #include <Input/input.hpp>
 #include <State/StateManager.hpp>
+#include <Object/ObjectManager.hpp>
 #include <State/Level1.hpp>
 #include <State/Level2.hpp>
 
@@ -14,8 +15,8 @@ Application* Application::GetApplication()
 void Application::Init()
 {
 
-    StateManger::GetStateManager()->AddState("Level1", dynamic_cast<State*>(new Level1()));
-    StateManger::GetStateManager()->AddState("Level2", dynamic_cast<State*>(new Level2()));
+    StateManger::GetStateManager()->AddState(dynamic_cast<State*>(new Level1()));
+    StateManger::GetStateManager()->AddState(dynamic_cast<State*>(new Level2()));
     input.Init();
     window.CreateWindow();
 }
@@ -38,6 +39,8 @@ void Application::Update(float dt)
 
     const auto& stateManger = StateManger::GetStateManager();
     stateManger->Update();
+    const auto& objManager = ObjectManager::GetObjectManager();
+    objManager->Update(dt);
 
     GetApplication()->Input();
 

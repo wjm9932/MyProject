@@ -1,6 +1,7 @@
 #pragma once
-#include <unordered_map>
+//#include <unordered_map>
 #include <State/State.hpp>
+#include <list>
 
 class StateManger
 {
@@ -8,10 +9,10 @@ public:
     static StateManger* GetStateManager();
     void Init();
     void Update();
-    void SetNextState();
-    void AddState(std::string, State* state);
+    void SetNextState(bool flag);
+    void AddState(State* state);
 private:
     std::string nextState;
-    std::unordered_map<std::string, State*> states;
-    State* currentState = nullptr;
+    std::list<State*> states;
+    std::list<State*>::iterator currentState;
 };

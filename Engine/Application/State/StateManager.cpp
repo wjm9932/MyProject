@@ -16,35 +16,35 @@ void StateManger::Update()
 {
     if (input.IsKeyTriggered(GLFW_KEY_N))
     {
-        SetNextState();
+        SetNextState(true);
     }
-    currentState->Update();
+    (*currentState)->Update();
 
-    if (currentState->GetIsNext() == true)
+    if ((*currentState)->GetIsNext() == true)
     {
-        std::string tmpName = currentState->GetNextStateName();
-        const auto& temp = states.find(tmpName);
-        currentState = temp->second;
-        
-        currentState->Init();
+
+        currentState++;
+        (*currentState)->Init();
     }
 }
 
-void StateManger::SetNextState()
+void StateManger::SetNextState(bool flag)
 {
-    currentState->SetIsNext(true);
+    (*currentState)->SetIsNext(flag);
 }
 
-void StateManger::AddState(std::string name, State* state)
+void StateManger::AddState(State* state)
 {
-    auto tmp = std::make_pair(name, state);
-    if (currentState == nullptr)
+    if (states.empty() == true)
     {
-        currentState = state;
-        currentState->Init();
+        states.push_back(state);
+        currentState = states.begin();
+        (*currentState)->Init();
     }
-
-    states.insert(tmp);
+    else
+    {
+        states.push_back(state);
+    }
 
 }
 
