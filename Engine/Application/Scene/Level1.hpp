@@ -1,9 +1,9 @@
 #pragma once
-#include <State/State.hpp>
+#include <Scene/Scene.hpp>
 
 class Achievement;
 class Object;
-class Level1 : public State
+class Level1 : public Scene
 {
 public:
     virtual void Init();

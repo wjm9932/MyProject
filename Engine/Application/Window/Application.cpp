@@ -1,10 +1,10 @@
 #include <iostream>
 #include <Window/Application.hpp>
 #include <Input/input.hpp>
-#include <State/StateManager.hpp>
+#include <Scene/SceneManager.hpp>
 #include <Object/ObjectManager.hpp>
-#include <State/Level1.hpp>
-#include <State/Level2.hpp>
+#include <Scene/Level1.hpp>
+#include <Scene/Level2.hpp>
 
 Application* Application::GetApplication()
 {
@@ -15,8 +15,8 @@ Application* Application::GetApplication()
 void Application::Init()
 {
 
-    StateManger::GetStateManager()->AddState(dynamic_cast<State*>(new Level1()));
-    StateManger::GetStateManager()->AddState(dynamic_cast<State*>(new Level2()));
+    SceneManager::GetStateManager()->AddState(dynamic_cast<Scene*>(new Level1()));
+    SceneManager::GetStateManager()->AddState(dynamic_cast<Scene*>(new Level2()));
     input.Init();
     window.CreateWindow();
 }
@@ -37,7 +37,7 @@ void Application::Update(float dt)
     window.PollEvent();
     window.SwapBackBuffer();
 
-    const auto& stateManger = StateManger::GetStateManager();
+    const auto& stateManger = SceneManager::GetStateManager();
     stateManger->Update();
     const auto& objManager = ObjectManager::GetObjectManager();
     objManager->Update(dt);

@@ -1,8 +1,8 @@
 #pragma once
 
-#include <State/State.hpp>
+#include <Scene/Scene.hpp>
 
-class Level2 : public State
+class Level2 : public Scene
 {
     virtual void Init();
     virtual void Update();

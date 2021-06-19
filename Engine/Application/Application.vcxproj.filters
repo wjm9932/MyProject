@@ -28,9 +28,6 @@
     <Filter Include="Source Files\Component">
       <UniqueIdentifier>{b65d98a6-dd92-45bd-beb0-f8a43ef0f2c6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\State">
-      <UniqueIdentifier>{9b0fe5f2-3283-42cf-906d-570d2bf25edb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Observer">
       <UniqueIdentifier>{742b4942-98fe-4b83-b657-8f5ad8a27da6}</UniqueIdentifier>
     </Filter>
@@ -39,6 +36,9 @@
     </Filter>
     <Filter Include="Source Files\Achievement">
       <UniqueIdentifier>{f3a24cd8-b0fb-4c51-8e64-78a6f86d232a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{dde45190-8b33-4d86-915b-cf02e939a2f5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -66,18 +66,6 @@
     <ClCompile Include="Component\Component.cpp">
       <Filter>Source Files\Component</Filter>
     </ClCompile>
-    <ClCompile Include="State\StateManager.cpp">
-      <Filter>Source Files\State</Filter>
-    </ClCompile>
-    <ClCompile Include="State\State.cpp">
-      <Filter>Source Files\State</Filter>
-    </ClCompile>
-    <ClCompile Include="State\Level1.cpp">
-      <Filter>Source Files\State</Filter>
-    </ClCompile>
-    <ClCompile Include="State\Level2.cpp">
-      <Filter>Source Files\State</Filter>
-    </ClCompile>
     <ClCompile Include="Object\ObjectManager.cpp">
       <Filter>Source Files\Object</Filter>
     </ClCompile>
@@ -95,6 +83,18 @@
     </ClCompile>
     <ClCompile Include="Achievement\Achievement.cpp">
       <Filter>Source Files\Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Level1.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Level2.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>Source Files\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -128,18 +128,6 @@
     <ClInclude Include="Component\Component.hpp">
       <Filter>Source Files\Component</Filter>
     </ClInclude>
-    <ClInclude Include="State\StateManager.hpp">
-      <Filter>Source Files\State</Filter>
-    </ClInclude>
-    <ClInclude Include="State\State.hpp">
-      <Filter>Source Files\State</Filter>
-    </ClInclude>
-    <ClInclude Include="State\Level1.hpp">
-      <Filter>Source Files\State</Filter>
-    </ClInclude>
-    <ClInclude Include="State\Level2.hpp">
-      <Filter>Source Files\State</Filter>
-    </ClInclude>
     <ClInclude Include="Object\ObjectManager.hpp">
       <Filter>Source Files\Object</Filter>
     </ClInclude>
@@ -157,6 +145,18 @@
     </ClInclude>
     <ClInclude Include="Achievement\Achievement.hpp">
       <Filter>Source Files\Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Level1.hpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Level2.hpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.hpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.hpp">
+      <Filter>Source Files\Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

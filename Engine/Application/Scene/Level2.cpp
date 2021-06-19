@@ -1,4 +1,4 @@
-#include <State/Level2.hpp>
+#include <Scene/Level2.hpp>
 #include <iostream>
 
 void Level2::Init()

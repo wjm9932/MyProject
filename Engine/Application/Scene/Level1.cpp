@@ -1,11 +1,15 @@
-#include <State/Level1.hpp>
+//system
 #include <iostream>
+
+//Application
+#include <Scene/Level1.hpp>
 #include <Object/Object.hpp>
 #include <Object/ObjectManager.hpp>
 #include <Component/Physics.hpp>
 #include <Component/Sprite.hpp>
 #include <Input/input.hpp>
 #include <Achievement/Achievement.hpp>
+#include <State/StateMachine.hpp>
 
 void Level1::Init()
 {
@@ -51,5 +55,10 @@ void Level1::Update()
     if (input.IsKeyTriggered(GLFW_KEY_3))
     {
         testObject_3->SetDead(true);
+
+    }
+    if (input.IsKeyTriggered(GLFW_KEY_4))
+    {
+        testObject_1->GetComponentByTemplate<Physics>()->RemoveObserver(test1ObjectAchievement);
     }
 }

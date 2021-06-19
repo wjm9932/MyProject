@@ -1,18 +1,18 @@
 #include <string>
-#include <State/StateManager.hpp>
+#include <Scene/SceneManager.hpp>
 #include <Input/input.hpp>
 
-StateManger* StateManger::GetStateManager()
+SceneManager* SceneManager::GetStateManager()
 {
-    static StateManger* stateManager = new StateManger();
+    static SceneManager* stateManager = new SceneManager();
     return stateManager;
 }
 
-void StateManger::Init()
+void SceneManager::Init()
 {
 }
 
-void StateManger::Update()
+void SceneManager::Update()
 {
     if (input.IsKeyTriggered(GLFW_KEY_N))
     {
@@ -28,12 +28,12 @@ void StateManger::Update()
     }
 }
 
-void StateManger::SetNextState(bool flag)
+void SceneManager::SetNextState(bool flag)
 {
     (*currentState)->SetIsNext(flag);
 }
 
-void StateManger::AddState(State* state)
+void SceneManager::AddState(Scene* state)
 {
     if (states.empty() == true)
     {
