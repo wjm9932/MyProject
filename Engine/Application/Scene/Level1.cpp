@@ -9,8 +9,11 @@
 #include <Component/Sprite.hpp>
 #include <Input/input.hpp>
 #include <Achievement/Achievement.hpp>
-#include <State/StateMachine.hpp>
 
+//State
+#include <State/StateMachine.hpp>
+#include <State/Idle.hpp>
+#include <State/Move.hpp>
 void Level1::Init()
 {
     SetIsNext(false);
@@ -25,7 +28,7 @@ void Level1::Init()
     testObject_1 = new Object("testObject_1");
     testObject_1->AddComponent(new Physics(testObject_1));
     testObject_1->AddComponent(new Sprite(testObject_1));
-    testObject_1->GetComponentByTemplate<Physics>()->AddObserver(test1ObjectAchievement);
+    testObject_1->AddComponent(new StateMachine(testObject_1));
 
     testObject_2 = new Object("testObject_2");
     testObject_2->AddComponent(new Sprite(testObject_2));
@@ -36,10 +39,12 @@ void Level1::Init()
     testObject_3->AddComponent(new Physics(testObject_3));
     testObject_3->AddComponent(new Sprite(testObject_3));
 
-
     objManager->AddObject(testObject_1);
     objManager->AddObject(testObject_2);
     objManager->AddObject(testObject_3);
+
+    testObject_1->GetComponentByTemplate<Physics>()->AddObserver(test1ObjectAchievement);
+    testObject_1->GetComponentByTemplate<StateMachine>()->SetCurrentState(Idle::Get());
 }
 
 void Level1::Update()
@@ -60,5 +65,13 @@ void Level1::Update()
     if (input.IsKeyTriggered(GLFW_KEY_4))
     {
         testObject_1->GetComponentByTemplate<Physics>()->RemoveObserver(test1ObjectAchievement);
+    }
+    if (input.IsKeyPressed(GLFW_KEY_W))
+    {
+        testObject_1->GetComponentByTemplate<StateMachine>()->ChangeState(Move::Get());
+    }
+    if (input.IsKeyReleased(GLFW_KEY_W))
+    {
+        testObject_1->GetComponentByTemplate<StateMachine>()->ChangeState(Idle::Get());
     }
 }

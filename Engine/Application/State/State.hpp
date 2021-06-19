@@ -1,8 +1,10 @@
 #pragma once
 
+class Object;
 class State
 {
-    virtual void Enter() = 0;
-    virtual void Execute() = 0;
-    virtual void Exit() = 0;
+public:
+    virtual void Enter(Object* obj) = 0;
+    virtual void Execute(Object* obj) = 0;
+    virtual void Exit(Object* ) = 0;
 };

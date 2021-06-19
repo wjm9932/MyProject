@@ -3,7 +3,7 @@
 
 void Achievement::Unlock(Event event)
 {
-    std::cout << "You are survived! \n";
+    //std::cout << "You are survived! \n";
     
 }
 
