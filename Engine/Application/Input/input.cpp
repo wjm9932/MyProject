@@ -169,14 +169,7 @@ void Input::SetShouldToggleWindow(bool should) noexcept
 
 void Input::HandleInput()
 {
-    if (IsKeyTriggered(GLFW_KEY_SPACE))
-    {
-        Button_Space->Execute();
-    }
-    else if (IsKeyPressed(GLFW_KEY_S))
-    {
-
-    }
+  
 }
 
 double Input::MouseWheelScroll()

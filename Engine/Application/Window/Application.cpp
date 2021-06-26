@@ -42,15 +42,8 @@ void Application::Update(float dt)
     const auto& objManager = ObjectManager::GetObjectManager();
     objManager->Update(dt);
 
-    GetApplication()->Input();
-
 }
 
 void Application::Clear()
 {
-}
-
-void Application::Input()
-{
-    input.HandleInput();
 }

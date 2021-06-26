@@ -7,9 +7,9 @@ class Move : public State
 {
 public:
     static Move* Get();
-    virtual void Enter(Object*) override;
-    virtual void Execute(Object*) override;
-    virtual void Exit(Object*) override;
+    virtual void Enter(Object*obj) override;
+    virtual void Execute(Object*obj, float dt) override;
+    virtual void Exit(Object*obj) override;
 
 
 private:

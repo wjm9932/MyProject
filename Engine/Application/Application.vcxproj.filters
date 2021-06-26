@@ -60,9 +60,6 @@
     <ClCompile Include="Window\Window.cpp">
       <Filter>Source Files\Window</Filter>
     </ClCompile>
-    <ClCompile Include="Command\Jump.cpp">
-      <Filter>Source Files\Command</Filter>
-    </ClCompile>
     <ClCompile Include="Object\Object.cpp">
       <Filter>Source Files\Object</Filter>
     </ClCompile>
@@ -108,6 +105,9 @@
     <ClCompile Include="State\Move.cpp">
       <Filter>Source Files\State</Filter>
     </ClCompile>
+    <ClCompile Include="State\Jumping.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Input\input.hpp">
@@ -127,9 +127,6 @@
     </ClInclude>
     <ClInclude Include="Window\Timer.hpp">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Command\Jump.hpp">
-      <Filter>Source Files\Command</Filter>
     </ClInclude>
     <ClInclude Include="Command\Command.hpp">
       <Filter>Source Files\Command</Filter>
@@ -180,6 +177,9 @@
       <Filter>Source Files\State</Filter>
     </ClInclude>
     <ClInclude Include="State\Move.hpp">
+      <Filter>Source Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\Jumping.hpp">
       <Filter>Source Files\State</Filter>
     </ClInclude>
   </ItemGroup>

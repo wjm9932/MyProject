@@ -11,7 +11,7 @@ void StateMachine::Init()
 
 void StateMachine::Update(float dt)
 {
-    currentState->Execute(owner);
+    currentState->Execute(owner, dt);
 }
 
 void StateMachine::Clear()
@@ -31,10 +31,7 @@ State* StateMachine::GetCurrentState()
 
 void StateMachine::ChangeState(State* state)
 {
-    if (currentState != state)
-    {
-        currentState->Exit(owner);
-        currentState = state;
-        currentState->Enter(owner);
-    }
+    currentState->Exit(owner);
+    currentState = state;
+    currentState->Enter(owner);
 }

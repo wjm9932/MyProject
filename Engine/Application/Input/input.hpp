@@ -4,7 +4,7 @@
 #include <GLFW/glfw3.h>
 #include "Vector2.hpp"
 #include <Command/Command.hpp>
-#include <Command/Jump.hpp>
+//#include <Command/Jump.hpp>
 
 class Input
 {
@@ -56,8 +56,6 @@ private:
     bool isRunning = true;
     bool shouldToggleWindow = false;
 
-    Command* Button_Space = new Jump();
-    Command* Button_S = nullptr;
 };
 
 extern Input input;

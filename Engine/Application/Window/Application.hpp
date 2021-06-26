@@ -8,7 +8,6 @@ public:
     void Init();
     void Update(float dt);
     void Clear();
-    void Input();
 
 private:
     Application() = default;

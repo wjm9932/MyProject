@@ -66,12 +66,4 @@ void Level1::Update()
     {
         testObject_1->GetComponentByTemplate<Physics>()->RemoveObserver(test1ObjectAchievement);
     }
-    if (input.IsKeyPressed(GLFW_KEY_W))
-    {
-        testObject_1->GetComponentByTemplate<StateMachine>()->ChangeState(Move::Get());
-    }
-    if (input.IsKeyReleased(GLFW_KEY_W))
-    {
-        testObject_1->GetComponentByTemplate<StateMachine>()->ChangeState(Idle::Get());
-    }
 }
